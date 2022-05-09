@@ -32,8 +32,9 @@ public class ProductosServiceImpl implements ProductosService{
 	}
 
 	@Override
-	public void delete(Long id) {
+	public String delete(Long id) {
 		repository.deleteById(id);
+		return "SUCCESS";
 	}
 
 }

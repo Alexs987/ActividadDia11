@@ -4,6 +4,7 @@ import acjm.model.Categoria;
 import acjm.services.CategoriasService;
 import acjm.services.impl.CategoriasServiceImpl;
 
+
 public class Test {
 
 	public static void main(String[] args) {

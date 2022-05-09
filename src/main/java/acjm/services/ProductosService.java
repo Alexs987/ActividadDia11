@@ -10,5 +10,5 @@ public interface ProductosService {
 	/*public List<Producto> getAllProductos();*/
 	public Optional<Producto> getProductosId(Long id);
 	public Producto save(Producto producto);
-	public void delete(Long id);
+	public String delete(Long id);
 }

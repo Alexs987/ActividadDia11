@@ -16,6 +16,7 @@ public class CategoriasServiceImpl implements CategoriasService{
 	@Autowired
 	private CategoriasRespository repository;
 	
+	
 	@Override
 	public List<Categoria> getAllCategorias() {
 		return (List<Categoria>) repository.findAll();
@@ -32,8 +33,9 @@ public class CategoriasServiceImpl implements CategoriasService{
 	}
 
 	@Override
-	public void delete(Long id) {
-		repository.deleteById(id);;
+	public String delete(Long id) {
+		repository.deleteById(id);
+		return "SUCCESS";
 	}
 
 }

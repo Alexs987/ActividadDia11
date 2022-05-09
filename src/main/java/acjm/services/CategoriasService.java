@@ -10,5 +10,5 @@ public interface CategoriasService {
 	public List<Categoria> getAllCategorias();
 	public Optional<Categoria> getCategoriaId(Long id);
 	public Categoria save(Categoria categoria);
-	public void delete(Long id);
+	public String delete(Long id);
 }
